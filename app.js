@@ -32,7 +32,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // TODO: Write your code here
 function multiply(a,b){ //eslint-disable-line
-
+  var result = a * b;
+  
 }
 
 // TODO: Here is the test for multiply(); uncomment it to run it
