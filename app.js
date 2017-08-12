@@ -103,7 +103,7 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiplyArray(testArray){ //eslint-disable-line
-
+  var arrayMultiply = [2, 3, 4];
 }
 
 // Here is the test for multiplyArray(); uncomment it to run it
