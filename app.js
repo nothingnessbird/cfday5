@@ -16,6 +16,8 @@ function sum(a,b){ //eslint-disable-line
   var output = 'The sum of ' + a + ' and ' + b + ' is ' + result + '.';
   return [result, output];
 }
+var element = document.getElementById('sum');
+element.innerHTML = sum(4, 11)[1];
 
 // TODO: Here is the test for sum(); uncomment it to run it
 testSum(4, 11);
@@ -36,6 +38,8 @@ function multiply(a,b){ //eslint-disable-line
   var output = 'The product of ' + a + ' and ' + b + ' is ' + result + '.';
   return [result, output];
 }
+var element2 = document.getElementById('multiply');
+element2.innerHTML = multiply(5, 9)[1];
 
 // TODO: Here is the test for multiply(); uncomment it to run it
 testMultiply(5,9);
@@ -61,6 +65,11 @@ function sumAndMultiply(a,b,c){ //eslint-disable-line
   // debugger;
   return [sumResult, productResult, a + ' and ' + b + ' and ' + c + ' sum to ' + sumResult + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productResult + '.'];
 }
+var element3 = document.getElementById('sAMSum');
+element3.innerHTML = sumAndMultiply(4, 7, 5)[2];
+
+var element4 = document.getElementById('sAMMultiply');
+element4.innerHTML = sumAndMultiply(4, 7, 5)[3];
 
 // TODO: Here is the test for sumAndMultiply(); uncomment it to run it
 testSumAndMultiply(4,7,5);
@@ -85,6 +94,8 @@ function sumArray(testArray){ //eslint-disable-line
   console.log(testArray + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.');
   return [arraySum, testArray + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.'];
 }
+var element5 = document.getElementById('sumArray');
+element5.innerHTML = sumArray(testArray)[1];
 
 // TODO: Here is the test for sumArray(); uncomment it to run it
 testSumArray(testArray);
@@ -106,6 +117,8 @@ function multiplyArray(testArray){ //eslint-disable-line
   var arrayProduct = multiply(multiply(testArray[0], testArray[1])[0], testArray[2])[0];
   return [arrayProduct, 'The numbers ' + testArray + ' have a product of ' + arrayProduct + '.'];
 }
+var element6 = document.getElementById('multiplyArray');
+element6.innerHTML = multiplyArray(testArray)[1];
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(2,3,4);
