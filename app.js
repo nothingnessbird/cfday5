@@ -61,8 +61,6 @@ Test this function by hand in the console to get it working, and when you think 
 function sumAndMultiply(a,b,c){ //eslint-disable-line
   var sumResult = sum(sum(a, b)[0], c)[0];
   var productResult = multiply(multiply(a, b)[0], c)[0];
-  // console.log([sumResult, productResult, a + ' and ' + b + ' and ' + c + ' sum to ' + sumResult + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productResult + '.']);
-  // debugger;
   return [sumResult, productResult, a + ' and ' + b + ' and ' + c + ' sum to ' + sumResult + '.', 'The product of ' + a + ' and ' + b + ' and ' + c + ' is ' + productResult + '.'];
 }
 var element3 = document.getElementById('sAMSum');
@@ -91,7 +89,6 @@ var testArray = [2,3,4]; //eslint-disable-line
 
 function sumArray(testArray){ //eslint-disable-line
   var arraySum = sum(sum(testArray[0],testArray[1])[0],testArray[2])[0];
-  console.log(testArray + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.');
   return [arraySum, testArray + ' was passed in as an array of numbers, and ' + arraySum + ' is their sum.'];
 }
 var element5 = document.getElementById('sumArray');
